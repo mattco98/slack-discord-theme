@@ -1,7 +1,7 @@
 # Slack Discord Theme
 For those who share my love of Discord's dark theme.
 
-_*Note: Windows only!*_
+**_Note: Windows only!_**
 
 # Setup
 Simply run `node setup.js`. This will inject the `scripts/ssb-interop.js` file
@@ -23,8 +23,8 @@ recompiled, and slack will re-open to apply changes.
 *TODO: Figure out how to refresh slack instead of restarting it*.
 
 # Credit
-The SASS code was initially pulled from (laCour's slack-night-mode theme)[https://github.com/laCour/slack-night-mode/] 
+The SASS code was initially pulled from [laCour's slack-night-mode theme](https://github.com/laCour/slack-night-mode/) 
 and modified.
 
 The `ssb-interop.js` file trick and most code in `ssb-interop-mod.js` was taken at large
-from (this github gist)[https://gist.github.com/DrewML/0acd2e389492e7d9d6be63386d75dd99#gistcomment-2021885]
+from [this github gist](https://gist.github.com/DrewML/0acd2e389492e7d9d6be63386d75dd99#gistcomment-2021885)
