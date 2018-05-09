@@ -4,7 +4,9 @@
   "description": "Discord theme for slack",
   "main": "scripts/setup.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "build-scss": "node-sass -r --output-style compressed ./scss/main.scss -o ./out/slack/",
+      "watch-scss": "npm run build-scss && npm run build-scss -- -w",
+      "start": "node ./setup.js && npm run watch-scss"
   },
   "repository": {
     "type": "git",

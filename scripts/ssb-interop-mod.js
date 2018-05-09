@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const cssPath = 'https://raw.githubusercontent.com/angelsix/youtube/develop/Windows%2010%20Dark%20Theme/Slack/slack-dark.css';
   let cssPromise = fetch(cssPath).then(response => response.text());
 
-  const customCSS = require('fs').readFileSync(root + '/resources/app.asar.unpacked/src/static/%SLACK_CSS_FILENAME%');
+  const customCSS = require('fs').readFileSync(require('path').join(root, '%SLACK_CSS_FILENAME%'));
 
   // Insert a style tag into the wrapper view
   cssPromise.then(css => {
