@@ -1,0 +1,35 @@
+{
+  "name": "slack-discord-theme",
+  "version": "1.0.0",
+  "description": "Discord theme for slack",
+  "main": "scripts/setup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattco98/slack-discord-theme.git"
+  },
+  "keywords": [
+    "slack",
+    "discord",
+    "theme",
+    "slack-theme",
+    "discord-theme",
+    "dark",
+    "dark-theme",
+    "slack-discord-theme",
+    "black",
+    "black-theme"
+  ],
+  "author": "Matthew Olsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattco98/slack-discord-theme/issues"
+  },
+  "homepage": "https://github.com/mattco98/slack-discord-theme#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "node-sass-watcher": "^0.5.1"
+  }
+}
