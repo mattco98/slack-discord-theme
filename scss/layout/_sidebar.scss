@@ -22,18 +22,19 @@
     &:link,
     &:visited,
     &:hover {
-      color: rgba($base-font-color, 0.8) !important;
+      color: #727671 !important;
     }
 
     &--selected,
     &--selected:link,
     &--selected:visited,
     &--selected:hover {
-      color: $base-font-color;
+      color: #F6F0E7 !important;
     }
 
     &:hover {
-      background: $color-base !important;
+      background: #36393F !important;
+      color: #D6D7D9 !important;
     }
   }
 
