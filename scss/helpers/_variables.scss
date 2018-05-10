@@ -12,7 +12,21 @@ $color-shade-lightest: #96989B !default;
 
 $color-highlight: #4A433A !default;
 
+// Sidebar colors:
+$color-sidebar-background: $color-shade-dark;
+$color-sidebar-selected: $color-shade-light;
+$color-sidebar-hover: $color-shade-mid;
+
 // Font Colors
+$color-font-sidebar: #4F544C;
+$color-font-sidebar-selected: #F6F0E7;
+$color-font-sidebar-hover: #D6D7D9;
+$color-font-sidebar-header: #84878b;
+$color-font-sidebar-header-hover: #B9BBB5;
+$color-font-main-message: #BFC1C1;
+// $color-font-main-message-sender: 
+
+
 $font-sidebar: #4F544C !default;
 $font-sidebar-selected: #EAF6EC !default;
 $base-font-color: #e6e6e6 !default;

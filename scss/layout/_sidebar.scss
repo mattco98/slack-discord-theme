@@ -1,5 +1,5 @@
 .client_channels_list_container {
-  background-color: $color-shade-dark;
+  background-color: $color-sidebar-background;
   border-right-color: $color-base;
 }
 
@@ -8,8 +8,8 @@
 }
 
 .p-channel_sidebar {
-  background-color: $color-shade-dark !important;
-  color: $base-font-color;
+  background-color: $color-sidebar-background !important;
+  color: $color-font-sidebar;
 
   &__channel,
   &__link {
@@ -29,13 +29,21 @@
     &--selected:link,
     &--selected:visited,
     &--selected:hover {
-      color: #F6F0E7 !important;
+      color: $color-font-sidebar-selected !important;
     }
 
     &:hover {
-      background: #36393F !important;
-      color: #D6D7D9 !important;
+      background: $color-sidebar-hover !important;
+      color: $color-font-sidebar-hover !important;
     }
+  }
+
+  &__section_heading {
+      color: $color-font-sidebar-header !important;
+
+      &:hover {
+          color: $color-font-sidebar-header-hover !important;
+      }
   }
 
   &__header {
@@ -53,10 +61,10 @@
 
   &__channel--selected,
   &__link--selected {
-    background: $color-shade-light !important;
+    background: $color-sidebar-selected !important;
 
     &:hover {
-      background: $color-shade-light !important;
+      background: $color-sidebar-selected !important;
     }
   }
 
