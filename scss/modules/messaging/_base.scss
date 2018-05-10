@@ -111,7 +111,8 @@
   }
 
   &__sender {
-    color: $base-font-color;
+    color: $color-font-message-sender;
+    font-weight: normal;
 
     a {
       color: $base-font-color;
@@ -123,7 +124,7 @@
   }
 
   &__body {
-    color: $base-font-color;
+    color: $color-font-message;
 
     &--unknown {
       background: rgba($color-shade-light, 0.1);
@@ -140,6 +141,19 @@
     .c-mrkdwn__mention,
     .c-mrkdwn__broadcast--mention {
       color: $color-highlight;
+    }
+
+    a {
+        color: $color-font-link;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & > .c-mrkdwn__channel.internal_channel_link {
+        color: #6189DA;
+        background-color: #3C414D;
     }
   }
 

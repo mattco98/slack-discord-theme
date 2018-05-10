@@ -1,6 +1,6 @@
 $color-tag: #7289da;
 $color-tag-background: rgba(250, 166, 26, 0.0980392);
-$color-tag-hover: black;
+$color-tag-background-hover: #6988f8;
 
 .c-member_slug,
 .c-mrkdwn__broadcast {
@@ -9,7 +9,7 @@ $color-tag-hover: black;
     border-left: 4px solid #FAA61A;
 
     &:hover {
-        color: #6988f8 !important;
+        color: $color-tag-background-hover !important;
         background-color: rgb(117, 87, 35) !important;
     }
 }

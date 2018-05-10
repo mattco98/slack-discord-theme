@@ -23,14 +23,12 @@ $color-font-sidebar-selected: #F6F0E7;
 $color-font-sidebar-hover: #D6D7D9;
 $color-font-sidebar-header: #84878b;
 $color-font-sidebar-header-hover: #B9BBB5;
-$color-font-main-message: #BFC1C1;
-// $color-font-main-message-sender: 
 
+$color-font-message: #C0C1C2;
+$color-font-message-sender: #FFFFEC;
+$color-font-link: #238ACA;
 
-$font-sidebar: #4F544C !default;
-$font-sidebar-selected: #EAF6EC !default;
-$base-font-color: #e6e6e6 !default;
-
+$base-font-color: $color-font-message;
 $base-link-color: $color-highlight !default;
 $base-link-color-active: #c7c7c7 !default;
 
