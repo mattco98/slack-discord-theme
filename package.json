@@ -4,9 +4,9 @@
   "description": "Discord theme for slack",
   "main": "scripts/setup.js",
   "scripts": {
-      "build-scss": "node-sass -r --output-style compressed ./scss/main.scss -o ./out/slack/",
-      "watch-scss": "npm run build-scss && npm run build-scss -- -w",
-      "start": "node ./setup.js && npm run watch-scss"
+    "build-sass": "node-sass -r --output-style compressed ./scss/main.scss -o ./out/slack/",
+    "watch-sass": "npm run build-sass && npm run build-sass -- -w",
+    "start": "node scripts/start.js && npm run watch-sass"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,10 @@
   },
   "homepage": "https://github.com/mattco98/slack-discord-theme#readme",
   "dependencies": {
-    "node-sass": "^4.9.0",
     "node-sass-watcher": "^0.5.1"
+  },
+  "devDependencies": {
+    "chokidar": "^2.0.3",
+    "node-sass": "^4.9.0"
   }
 }
