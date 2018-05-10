@@ -2,15 +2,14 @@ $color-tag: #7289da;
 $color-tag-background: rgba(250, 166, 26, 0.0980392);
 $color-tag-hover: black;
 
-.c-member_slug {
+.c-member_slug,
+.c-mrkdwn__broadcast {
     color: $color-tag !important;
     background-color: $color-tag-background;
     border-left: 4px solid #FAA61A;
 
-      
+    &:hover {
+        color: #6988f8 !important;
+        background-color: rgb(117, 87, 35) !important;
+    }
 }
-
-.c-member_slug:hover {
-    color: #6988f8;
-    background-color: rgb(150, 109, 37) !important;
-} 
