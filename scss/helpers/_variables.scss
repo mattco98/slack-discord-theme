@@ -1,14 +1,14 @@
 // Theme Colors
-$color-base: #222 !default;
+$color-base: #36393E !default;
 $color-highlight: #949494 !default;
 $color-red: #bf360c !default;
-$color-green: adjust-hue($color-red, 140) !default;
+$color-green: #43B581 !default;
 
-$color-shade-darkest: #000 !default;
-$color-shade-dark: #363636 !default;
-$color-shade-mid: #424242 !default;
-$color-shade-light: #545454 !default;
-$color-shade-lightest: #828282 !default;
+$color-shade-darkest: #202225 !default;
+$color-shade-dark: #2F3136 !default;
+$color-shade-mid: #36393E !default;
+$color-shade-light: #4A4C52 !default;
+$color-shade-lightest: #96989B !default;
 
 // Font Colors
 $base-font-color: #e6e6e6 !default;
