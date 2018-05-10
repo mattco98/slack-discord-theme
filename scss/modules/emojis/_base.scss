@@ -99,3 +99,8 @@ input[type="text"].p-emoji_picker__input {
     box-shadow: none;
   }
 }
+
+// Change emoji style to apple
+.emoji-outer { 
+  background-image: url('https://old-slack-emojis.cf/cdn/slack_2016_apple_sprite_64.png') !important; 
+}
