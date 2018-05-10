@@ -30,11 +30,7 @@
     "url": "https://github.com/mattco98/slack-discord-theme/issues"
   },
   "homepage": "https://github.com/mattco98/slack-discord-theme#readme",
-  "dependencies": {
-    "node-sass-watcher": "^0.5.1"
-  },
   "devDependencies": {
-    "chokidar": "^2.0.3",
     "node-sass": "^4.9.0"
   }
 }
