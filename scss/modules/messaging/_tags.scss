@@ -1,0 +1,16 @@
+$color-tag: #7289da;
+$color-tag-background: rgba(250, 166, 26, 0.0980392);
+$color-tag-hover: black;
+
+.c-member_slug {
+    color: $color-tag !important;
+    background-color: $color-tag-background;
+    border-left: 4px solid #FAA61A;
+
+      
+}
+
+.c-member_slug:hover {
+    color: #6988f8;
+    background-color: rgb(150, 109, 37) !important;
+} 
