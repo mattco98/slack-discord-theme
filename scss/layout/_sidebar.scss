@@ -13,6 +13,11 @@
 
   &__channel,
   &__link {
+    width: 90%;
+    margin: auto;
+    border-radius: 3px;
+    padding-left: 10px;
+
     &,
     &:link,
     &:visited,
