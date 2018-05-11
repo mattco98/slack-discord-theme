@@ -39,11 +39,11 @@
   }
 
   &__section_heading {
-      color: $color-font-sidebar-header !important;
+    color: $color-font-sidebar-header !important;
 
-      &:hover {
-          color: $color-font-sidebar-header-hover !important;
-      }
+    &:hover {
+      color: $color-font-sidebar-header-hover !important;
+    }
   }
 
   &__header {
