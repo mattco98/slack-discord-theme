@@ -29,6 +29,10 @@
   }
 }
 
+#presence::before {
+  color: $color-green !important;
+}
+
 #team_menu_user {
   color: $color-highlight;
 }

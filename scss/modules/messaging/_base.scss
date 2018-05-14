@@ -151,7 +151,8 @@
         }
     }
 
-    & > .c-mrkdwn__channel.internal_channel_link {
+    & > .c-mrkdwn__channel.internal_channel_link,
+    & > .c-mrkdwn__mention {
         color: #6189DA;
         background-color: #3C414D;
     }

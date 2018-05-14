@@ -5,6 +5,12 @@
   .blue_on_hover:hover {
     color: $base-font-color;
   }
+
+  span.presence.active {
+    i.ts_icon {
+      color: $color-green;
+    }
+  }
 }
 
 #client_body:not(.onboarding)::before {
