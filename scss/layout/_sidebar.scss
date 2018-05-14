@@ -59,6 +59,10 @@
     color: $color-highlight;
   }
 
+  .c-presence--active {
+    color: c-presence--active;
+  }
+
   &__channel--selected,
   &__link--selected {
     background: $color-sidebar-selected !important;

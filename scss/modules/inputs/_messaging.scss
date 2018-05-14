@@ -32,10 +32,13 @@
 }
 
 #msg_form {
-  &.focus {
-    #msg_input,
-    #primary_file_button:not(:hover):not(.active) {
-      border-color: $color-shade-dark;
+  #primary_file_button {
+    border-right: none;
+    border-color: $color-shade-mid !important;
+
+    &:hover {
+      background-color: $color-shade-light;
+      border-color: $color-shade-mid;
     }
   }
 
