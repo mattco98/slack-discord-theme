@@ -29,7 +29,7 @@
   }
 }
 
-#presence::before {
+#presence:not(.away)::before {
   color: $color-green !important;
 }
 
