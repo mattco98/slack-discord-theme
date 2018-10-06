@@ -159,8 +159,12 @@
 }
 
 #message_edit_container,
-.inline_message_input_container {
-  .message_input {
+#threads_msgs,
+#reply_container.upload_in_threads {
+  .inline_message_input_container,
+  .inline_message_input_container.with_file_upload {
+    background: $color-shade-light;
+    border-color: $color-shade-dark;
     color: $base-font-color;
   }
 }
@@ -176,6 +180,12 @@
 }
 
 .c-message {
+  &--editing {
+    background: $color-shade-dark;
+    border-color: $color-shade-dark;
+    color: $base-font-color;
+  }
+
   &__editor {
     &__input {
       background: $color-shade-light;
