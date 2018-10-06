@@ -8,26 +8,26 @@
 }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {
+  -webkit-input-placeholder {
     color: $base-font-color !important;
     -webkit-filter: none;
     filter: none;
     opacity: 0.5;
   }
 
-  &::-moz-placeholder {
+  -moz-placeholder {
     color: $base-font-color !important;
     filter: none;
     opacity: 0.5;
   }
 
-  &::placeholder {
+  placeholder {
     color: $base-font-color !important;
     filter: none;
     opacity: 0.5;
   }
 
-  &[data-placeholder]:empty::before {
+  [data-placeholder]:empty::before {
     color: $base-font-color !important;
   }
 }
