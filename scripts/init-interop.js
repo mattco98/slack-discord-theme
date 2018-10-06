@@ -1,35 +1,29 @@
 (async function () {
-  const fs = require('fs');
-  const path = require('path');
+  const { readFile, writeFile } = require('fs');
+  const { join } = require('path');
   const { promisify } = require('util');
-  const config = require('./config');
-
-  const { enableDevTools, devToolsMode, getSlackDirectory } = config;
-  const cssFilename = path.join('out', 'main.css');
-
-  // Get install directory
-  let dir = getSlackDirectory();
+  const { enableDevTools, devToolsMode, getSlackStaticDirectory } = require('./config');
   
-  const dirs = (await promisify(fs.readdir)(dir))
-    .filter(f => !f.toLowerCase().startsWith('app-'))
-    .filter(f => f.toLowerCase().endsWith('.ico'))
-    .sort();
+  const staticFile = await getSlackStaticDirectory();
 
-  const staticFile = path.join(dir, dirs[dirs.length - 1], 'resources', 'app.asar.unpacked', 'src', 'static');
+  const readFile = promisify(readFile);  
+  let interop = (await readFile(join(staticFile, 'ssb-interop.js'))).toString();
 
-  const readFile = promisify(fs.readFile);  
-  const interop = await readFile(path.join(staticFile, 'ssb-interop.js'));
+  let begin = interop.indexOf('// %SLACK_DISCORD_THEME_BEGIN%');
+  let end = interop.indexOf('// %SLACK_DISCORD_THEME_END%');
 
-  if (interop.endsWith('// %SLACK_DISCORD_THEME%')) {
-    return;
+  if (begin !== -1 && end !== -1) {
+    begin -= 2;
+    end += 28;
+    interop = interop.substr(0, begin) + interop.substr(end, interop.length - end);
   }
 
-  let interopMod = await readFile(path.join(__dirname, '..', 'resources', 'ssb-interop-mod.txt'));
-  interopMod = interopMod.toString()
+  let interopMod = await readFile(join(__dirname, '..', 'resources', 'ssb-interop-mod.txt'));
+  interopMod = interop + interopMod.toString()
     .replace('%SLACK_DEV_TOOLS%', enableDevTools)
     .replace('%SLACK_DEV_TOOLS_MODE%', devToolsMode)
-    .replace('%SLACK_ROOT%', root.replace(/\\/g, '\\\\'))
-    .replace('%SLACK_CSS_FILENAME%', cssFilename);
+    .replace('%SLACK_ROOT%', staticFile.replace(/\\/g, '\\\\'))
+    .replace('%SLACK_CSS_FILENAME%', 'main.css');
 
-  await promisify(fs.appendFile)(path.join(staticFile, 'ssb-interop.js'), interopMod);
+  await promisify(writeFile)(join(staticFile, 'ssb-interop.js'), interopMod);
 })();

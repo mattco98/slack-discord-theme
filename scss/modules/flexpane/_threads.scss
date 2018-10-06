@@ -62,12 +62,12 @@
 ts-message.message:hover,
 ts-message.message:active,
 ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator), ts-message.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator) {
-  background-color: $color-shade-darker;
+  background-color: $color-shade-dark;
 }
 
 ts-thread {
   .collapse_inline_thread_container:hover,
   .view_all_replies_container:hover {
-    background-color: $color-shade-darker;
+    background-color: $color-shade-dark;
   }
 }

@@ -1,5 +1,6 @@
 
 
+// %SLACK_DISCORD_THEME_BEGIN%
 document.addEventListener("DOMContentLoaded", function () {
   const root = '%SLACK_ROOT%';
 
@@ -36,4 +37,5 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     });
   });
-}); // %SLACK_DISCORD_THEME%
+});
+// %SLACK_DISCORD_THEME_END%
