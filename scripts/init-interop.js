@@ -1,12 +1,12 @@
 (async function () {
-  const { readFile, writeFile } = require('fs');
+  const { readFile: _readFile, writeFile } = require('fs');
   const { join } = require('path');
   const { promisify } = require('util');
   const { enableDevTools, devToolsMode, getSlackStaticDirectory } = require('./config');
   
   const staticFile = await getSlackStaticDirectory();
 
-  const readFile = promisify(readFile);  
+  const readFile = promisify(_readFile);  
   let interop = (await readFile(join(staticFile, 'ssb-interop.js'))).toString();
 
   let begin = interop.indexOf('// %SLACK_DISCORD_THEME_BEGIN%');

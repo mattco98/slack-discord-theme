@@ -31,7 +31,7 @@ const getSlackStaticDirectory = async () => {
 }
 
 module.exports = {
-  enableDevTools: false,
+  enableDevTools: true,
   devToolsMode: 'docked',
   getSlackStaticDirectory
 }
